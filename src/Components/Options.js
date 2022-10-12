@@ -17,9 +17,9 @@ const Options = ({ option, correctAnswer }) => {
   return (
     <div>
       <div className={`form-control`}>
-        <label className="label cursor-pointer">
+        <label className="label cursor-pointer p-5">
           <input type="checkbox" className={`form-check-input`} id="flexRadioDefault" onClick={handleAnswer}/>
-          <span className="label-text">{option}</span>
+          <span className="label-text pl-1">{option}</span>
         </label>
       </div>
       <ToastContainer />

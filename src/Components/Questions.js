@@ -9,7 +9,7 @@ const Questions = () => {
 
   return (
     <div className="flex flex-col items-center justify-between mt-28">
-      <h2>
+      <h2 className="bg-red-300 px-8 py-2 text-xl">
         This quiz is about <span>{name}</span>
       </h2>
 
