@@ -1,22 +1,27 @@
-import React, { createContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
-import Question from './Question';
-
-export const QuestionsContext = createContext([]);
+import React from "react";
+import { useLoaderData } from "react-router-dom";
+import Question from "./Question";
 
 const Questions = () => {
-    const questionsData = useLoaderData([])
+  const questionsData = useLoaderData();
   const allQuestions = questionsData.data.questions;
-  // const quizName = questionsData.data.name;
-    console.log(allQuestions);
-    return (
-      <div className="flex flex-col items-center justify-between mt-28">
-        
+  const name = questionsData.data.name;
+  // console.log(optionsData);
+
+  console.log(allQuestions);
+  return (
+    <div className="flex flex-col items-center justify-between mt-28">
+      <h2>
+        This quiz is about <span>{name}</span>
+      </h2>
+
+      <div>
         {allQuestions.map((questions) => (
           <Question key={questions.id} questions={questions} />
         ))}
       </div>
-    );
+    </div>
+  );
 };
 
 export default Questions;
