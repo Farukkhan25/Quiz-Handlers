@@ -13,6 +13,8 @@ There is also a statisticsw page where a chart is made base on the number of que
 
 The blog page will give some answers about useRef, context api and the purpose of react routing.
 
+An animation also added in the Topics page as well.
+
 Hope you will like the project.
 
 Thanks!!!
