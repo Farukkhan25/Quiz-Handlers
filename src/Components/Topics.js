@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 const Topics = () => {
   const topics = useContext(QuizContext);
-  // console.log(topics);
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-2 lg:py-24 ">
       <div className="flex flex-col items-center justify-between lg:flex-row ">
@@ -31,64 +30,24 @@ const Topics = () => {
               than the losers who can’t.
             </p>
           </div>
-          <div className="flex flex-col items-center md:flex-row justify-end md:justify-center">
+          <div className="flex flex-col items-center  justify-end md:justify-end">
             <Link
-              to="/about"
+              to="/blog"
               aria-label=""
-              className="inline-flex items-center font-bold text-red-800 transition-colors duration-200 hover:text-blue-700 pr-3"
+              className="inline-flex items-center font-bold text-xl text-red-800 transition-colors duration-200 hover:text-blue-700 pr-5 pb-5"
             >
-              Quiz Rules
+              Read Blogs
             </Link>
             <Link
-              to="/books"
-              className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-blue-400 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
+              to="/Statistics"
+              className="inline-flex items-center justify-center w-full h-12 px-32 py-6 mb-3 font-semibold tracking-wide text-3xl text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-blue-400 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
             >
-              <span className="mr-3">Start Quiz</span>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-4"
-              >
-                <polyline
-                  fill="none"
-                  stroke="currentColor"
-                  strokeMiterlimit="10"
-                  points="4,4 22,4 19,14 4,14 "
-                />
-                <circle
-                  cx="4"
-                  cy="22"
-                  r="2"
-                  strokeLinejoin="miter"
-                  strokeLinecap="square"
-                  stroke="none"
-                  fill="currentColor"
-                />
-                <circle
-                  cx="20"
-                  cy="22"
-                  r="2"
-                  strokeLinejoin="miter"
-                  strokeLinecap="square"
-                  stroke="none"
-                  fill="currentColor"
-                />
-                <polyline
-                  fill="none"
-                  stroke="currentColor"
-                  strokeMiterlimit="10"
-                  points="1,1 4,4 4,14 2,18 23,18 "
-                />
-              </svg>
+              <span className="mr-3">Statistics</span>
             </Link>
           </div>
         </div>
         <div className="relative lg:w-1/2">
-          <div className="w-full lg:w-4/5 lg:ml-auto h-56  sm:h-96 ">
+          <div className="w-full lg:w-4/5 lg:ml-auto h-56  sm:h-96 mb-24">
             <Lottie animationData={quiz} loop={true} />
           </div>
         </div>

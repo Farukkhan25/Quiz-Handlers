@@ -24,7 +24,6 @@ const Statistics = () => {
         };
         return topicsInfo;
       });
-      // console.log(topics);
       setTotals(topics);
     });
   }, []);
