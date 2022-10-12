@@ -1,3 +1,13 @@
+*{
+  scrollbar-width: thin;
+}
+
+body{
+  background-color:black;
+  background-image: url("../public/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .App {
   text-align: center;
 }
