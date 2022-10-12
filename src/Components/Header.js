@@ -63,7 +63,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/about"
+                to="/blog"
                 aria-label="Blog"
                 title="Blog"
                 className={({ isActive }) =>
@@ -125,7 +125,7 @@ const Header = () => {
                           <rect x="14" y="11" width="7" height="12" />
                         </svg>
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          proReader
+                          Quiz Handler
                         </span>
                       </Link>
                     </div>
@@ -169,7 +169,7 @@ const Header = () => {
                       </li>
                       <li>
                         <Link
-                          to="/about"
+                          to="/blog"
                           aria-label="Blog"
                           title="Blog"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
