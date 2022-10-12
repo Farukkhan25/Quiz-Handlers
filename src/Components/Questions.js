@@ -6,9 +6,7 @@ const Questions = () => {
   const questionsData = useLoaderData();
   const allQuestions = questionsData.data.questions;
   const name = questionsData.data.name;
-  // console.log(optionsData);
 
-  console.log(allQuestions);
   return (
     <div className="flex flex-col items-center justify-between mt-28">
       <h2>
