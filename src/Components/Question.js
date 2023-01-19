@@ -19,13 +19,11 @@ const Question = ({ questions }) => {
 
   return (
     <div className="flex flex-col items-center justify-between mt-20 border-2 border-indigo-500 drop-shadow-lg p-6 bg-yellow-300 text-lg font-bold">
-      <div className="">
-        <div className="flex justify-between items-center mb-5">
-          <h2 className="text-center me-5 pr-5">{eachQuestion}</h2>
-          <p onClick={showAnswer} className="fill-current text-red-700">
-            <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
-          </p>
-        </div>
+      <div className="flex justify-between items-center mb-5">
+        <h2 className="text-center me-5 pr-5">{eachQuestion}</h2>
+        <p onClick={showAnswer} className="fill-current text-red-700">
+          <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+        </p>
       </div>
 
       <div className="grid grid-col-1 lg:grid-cols-2">

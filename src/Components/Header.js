@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="bg-gray-100">
+    <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto bg-gray-100">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <Link
@@ -14,8 +14,8 @@ const Header = () => {
             className="inline-flex items-center"
           >
             <svg
-              className="w-8 text-blue-400"
-              viewBox="0 0 24 24"
+              className="w-8 h-10 text-blue-500"
+              viewBox="0 0 22 22"
               strokeLinejoin="round"
               strokeWidth="2"
               strokeLinecap="round"
@@ -23,16 +23,16 @@ const Header = () => {
               stroke="currentColor"
               fill="none"
             >
-              <rect x="3" y="1" width="7" height="12" />
-              <rect x="3" y="17" width="7" height="6" />
-              <rect x="14" y="1" width="7" height="6" />
-              <rect x="14" y="11" width="7" height="12" />
+              <rect x="3" y="1" width="7" height="13" />
+              <rect x="3" y="17" width="7" height="7" />
+              <rect x="14" y="1" width="7" height="7" />
+              <rect x="14" y="11" width="7" height="13" />
             </svg>
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
+            <span className="ml-2 text-3xl font-bold tracking-wide text-blue-500">
               Quiz Handlers
             </span>
           </Link>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
+          <ul className="flex items-center hidden space-x-8 lg:flex text-lg pr-6">
             <li>
               <NavLink
                 to="/Topics"
@@ -40,8 +40,8 @@ const Header = () => {
                 title="Topics"
                 className={({ isActive }) =>
                   isActive
-                    ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    ? "font-bold tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    : "font-bold tracking-wide text-sky-700 hover:text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                 }
               >
                 Topics
@@ -54,8 +54,8 @@ const Header = () => {
                 title="Statistics"
                 className={({ isActive }) =>
                   isActive
-                    ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    ? "font-bold tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    : "font-bold tracking-wide text-sky-700 hover:text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                 }
               >
                 Statistics
@@ -68,8 +68,8 @@ const Header = () => {
                 title="Blog"
                 className={({ isActive }) =>
                   isActive
-                    ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                    : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    ? "font-bold tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                    : "font-bold tracking-wide text-sky-700 hover:text-blue-700 transition-colors duration-200"
                 }
               >
                 Blog
